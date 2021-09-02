@@ -23,6 +23,7 @@ function Preview() {
 	const dispatch = useDispatch();
 	const user = useSelector(selectUser);
 
+	// takes you back to the homepage
 	useEffect(() => {
 		if (!cameraImage) {
 			history.replace("/");
@@ -34,6 +35,7 @@ function Preview() {
 	};
 
 	const sendPost = () => {
+		//UUID gives each user a unique id so the snaps can be sent. Generates a random string and the post is sent to the database.
 		const id = uuid();
 		const uploadTask = storage
 			.ref(`posts/${id}`)

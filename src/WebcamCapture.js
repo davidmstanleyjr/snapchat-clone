@@ -23,6 +23,7 @@ function WebcamCapture() {
 	const capture = useCallback(() => {
 		const imageSrc = webcamRef.current.getScreenshot();
 		dispatch(setCameraImage(imageSrc));
+		//uses the webpage history and redirects the user to the appropriate page
 		history.push("/preview");
 	}, [webcamRef]);
 
