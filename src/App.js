@@ -39,7 +39,7 @@ function App() {
 					<>
 						<img
 							className="app__logo"
-							src="https://lakeridgenewsonline.com/wp-content/uploads/2020/04/snapchat.jpg"
+							src="https://res.cloudinary.com/ddet8to42/image/upload/v1630620624/snapchat-clone/snapchat_c4vjqu.jpg"
 							alt=""
 						/>
 						<div className="app__body">
