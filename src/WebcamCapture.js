@@ -19,6 +19,7 @@ function WebcamCapture() {
 	const dispatch = useDispatch();
 	const history = useHistory();
 
+	// run the function once and then save the output of the function, that way if it's used again, it knows what to do already.
 	const capture = useCallback(() => {
 		const imageSrc = webcamRef.current.getScreenshot();
 		dispatch(setCameraImage(imageSrc));
