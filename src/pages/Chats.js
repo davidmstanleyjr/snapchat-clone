@@ -1,15 +1,15 @@
 import { Avatar } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import "./Chats.css";
+import "../css/Chats.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-import { auth, db } from "./firebase";
-import Chat from "./Chat";
+import { auth, db } from "../firebase";
+import Chat from "../pages/Chat";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUser } from "./features/appSlice";
+import { selectUser } from "../features/appSlice";
 import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
 import { useHistory } from "react-router-dom";
-import { resetCameraImage } from "./features/cameraSlice";
+import { resetCameraImage } from "../features/cameraSlice";
 
 function Chats() {
 	const [posts, setPosts] = useState([]);

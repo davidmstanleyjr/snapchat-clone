@@ -2,9 +2,9 @@ import React, { useCallback, useRef, useState } from "react";
 import Webcam from "react-webcam";
 import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
 import { useDispatch } from "react-redux";
-import { setCameraImage } from "./features/cameraSlice";
+import { setCameraImage } from "../features/cameraSlice";
 import { useHistory } from "react-router-dom";
-import "./WebcamCapture.css";
+import "../css/WebcamCapture.css";
 
 // this sets the size of the camera
 const videoConstraints = {

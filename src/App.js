@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import "./App.css";
-import WebcamCapture from "./WebcamCapture";
-import Preview from "./Preview";
+import "./css/App.css";
+import WebcamCapture from "./components/WebcamCapture";
+import Preview from "./components/Preview";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Chats from "./Chats";
-import ChatView from "./ChatView";
+import Chats from "./pages/Chats";
+import ChatView from "./components/ChatView";
 import { login, logout, selectUser } from "./features/appSlice";
 import { useDispatch, useSelector } from "react-redux";
-import Login from "./Login";
+import Login from "./pages/Login";
 import { auth } from "./firebase";
 
 function App() {
